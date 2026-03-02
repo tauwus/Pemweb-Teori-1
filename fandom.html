@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-    <title>Zutto Mayonaka de Iinoni.</title>
+    <title>Fandom</title>
 </head>
 <body>
   <!-- Main Loading Wrapper -->
@@ -23,24 +23,34 @@
   </div>
 
   <main class="container py-5 content-wrap">
-    <h1 class="outline-stack text-center font-agency" data-text="MUSIC">MUSIC</h1>
+    <a class="back-link mb-4" href="index.html">&#8592; Back to fandom list</a>
 
-    <section class="yt-slider-section mt-4" aria-label="YouTube section">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="yt-slider" aria-label="YouTube video slider">
-            <button class="yt-nav yt-nav-prev" type="button" aria-label="Previous video">
-              &#8592;
-            </button>
-
-            <div class="yt-stage" id="yt-stage"></div>
-
-            <button class="yt-nav yt-nav-next" type="button" aria-label="Next video">
-              &#8594;
-            </button>
-          </div>
+    <section class="fandom-page">
+      <div class="fandom-header">
+        <img id="fandom-logo" class="fandom-logo" src="" alt="Fandom logo">
+        <div class="fandom-meta">
+          <h1 id="fandom-title" class="outline-stack font-agency" data-text=""></h1>
+          <p id="fandom-description"></p>
         </div>
       </div>
+
+      <section class="yt-slider-section mt-4" aria-label="YouTube section">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="yt-slider" aria-label="YouTube video slider">
+              <button class="yt-nav yt-nav-prev" type="button" aria-label="Previous video">
+                &#8592;
+              </button>
+
+              <div class="yt-stage" id="yt-stage"></div>
+
+              <button class="yt-nav yt-nav-next" type="button" aria-label="Next video">
+                &#8594;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
   

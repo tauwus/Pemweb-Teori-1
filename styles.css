@@ -2,7 +2,7 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow: hidden;
-    background-image: url(src/obenkyoushitoiteyo.png);
+    background-color: #0b0b0f;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -253,6 +253,152 @@ body {
 .view-more-btn:hover {
     color: #111;
     background: #ff5a00;
+}
+
+.fandom-page {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 18px;
+    padding: 2rem;
+    backdrop-filter: blur(6px);
+}
+
+.fandom-form-card {
+    background: rgba(10, 10, 10, 0.75);
+    border: 1px solid rgba(255, 90, 0, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.45);
+}
+
+.fandom-form-card .form-control,
+.fandom-form-card .form-select {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.fandom-form-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.fandom-form-card .form-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fandom-card {
+    background: rgba(12, 12, 16, 0.8);
+    border: 1px solid rgba(255, 90, 0, 0.3);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    height: 100%;
+    cursor: pointer;
+}
+
+.fandom-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 38px rgba(0, 0, 0, 0.55);
+    border-color: rgba(255, 90, 0, 0.7);
+}
+
+.fandom-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.fandom-card .card-title {
+    color: #ff7b2d;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.fandom-card .card-text {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.fandom-card .btn-link {
+    color: #ff7b2d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fandom-card .btn-link:hover {
+    color: #ff9a5e;
+}
+
+.fandom-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.fandom-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.35);
+}
+
+.fandom-meta {
+    flex: 1;
+    min-width: 240px;
+}
+
+.fandom-meta p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.8rem;
+    font-size: 1.05rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff7b2d;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.back-link:hover {
+    color: #ff9a5e;
+}
+
+.index-hero {
+    background: linear-gradient(135deg, rgba(255, 90, 0, 0.15), rgba(0, 0, 0, 0.15));
+    border-radius: 24px;
+    padding: 2.5rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.index-hero .tracking-wide {
+    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#toggle-form-btn {
+    border-radius: 999px;
+    padding: 0.65rem 2.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+#toggle-form-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#cancel-edit-btn {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#cancel-edit-btn:hover {
+    color: #ff9a5e;
 }
 
 @media (max-width: 768px) {
